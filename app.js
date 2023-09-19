@@ -51,6 +51,7 @@ app.post('/add-denuncia', function(req, res){
       console.error('Erro ao inserir dados:', err);
       res.status(500).json({ erro: 'Erro ao inserir dados' });
     });
+    res.render('index');
     // res.send("Nome: " + req.body.nome + "<br>Valor: " + req.body.valor + "<br>") 
 })
 // Inicie o servidor na porta 3000
