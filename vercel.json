@@ -12,16 +12,12 @@
       "dest": "app.js"
     },
     {
-      "src": "/public/(.*)",
-      "dest": "public/$1"
+      "src": "/src/public/(css|js|img)/(.*)",
+      "dest": "src/public/$1/$2"
     },
     {
       "src": "/(.*)",
       "dest": "app.js"
-    },
-    {
-      "src": "/public/img/(.*)",
-      "dest": "public/img/$1"
     }
   ]
 }
