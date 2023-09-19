@@ -15,7 +15,7 @@ app.use(express.json());
 app.set('view engine', 'ejs');
 
 // Diretório onde seus arquivos de visualização (templates) estão localizados
-app.set('views', path.join(__dirname, 'views'));
+app.set('views', path.join(__dirname, 'src', 'views'));
 
 
 const client = new Client({
