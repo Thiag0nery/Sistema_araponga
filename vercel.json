@@ -6,46 +6,13 @@
         "use": "@vercel/node"
       },
       {
-        "src": "public/css/**", 
+        "src": "public/**",
         "use": "@vercel/static"
-      },
-      {
-        "src": "public/img/**", 
-        "use": "@vercel/static" 
-      },
-      {
-        "src": "public/js/**", 
-        "use": "@vercel/static" 
       }
     
     ],
     "routes": [
-      {
-     
-        "src": "/css/(.*)",
-        "dest": "/public/css/"
-      },
-      {
-       
-        "src": "/img/(.*)",
-        "dest": "/public/img/"
-      },
-      {
-       
-        "src": "/js/(.*)",
-        "dest": "/public/js/"
-      },
-      {
-        "src": "/favicon.ico",
-        "dest": "/public/favicon.ico"
-      },
-      {
-        "src": "/manifest.json",
-        "dest": "/public/manifest.json"
-      },
-      {
-        "src": "/(.*)",
-        "dest": "app.js"
-      }
+      { "handle": "@vercel/node" },
+      { "src": "/(.*)", "dest": "/public/$1" }
     ]
   }
