@@ -9,15 +9,15 @@
     "routes": [
       {
         "src": "/css/(.*)",
-        "dest": "/public/css/$1"
+        "dest": "/public/css/"
       },
       {
         "src": "/img/(.*)",
-        "dest": "/public/img/$1"
+        "dest": "/public/img/"
       },
       {
         "src": "/js/(.*)",
-        "dest": "/public/js/$1"
+        "dest": "/public/js/"
       },
       {
         "src": "/favicon.ico",
@@ -33,4 +33,3 @@
       }
     ]
   }
-  
