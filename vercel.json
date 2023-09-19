@@ -12,8 +12,8 @@
       "dest": "app.js"
     },
     {
-      "src": "/src/public/(css|js|img)/(.*)",
-      "dest": "src/public/$1/$2"
+      "src": "/public/(css|js|img)/(.*)", 
+      "dest": "public/$1/$2"
     },
     {
       "src": "/(.*)",
