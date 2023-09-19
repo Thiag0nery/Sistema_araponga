@@ -10,7 +10,6 @@ app.use('/img', express.static('public/img'));
 app.use('/js', express.static('public/js'));
 const { Client } = require('pg');
 app.use(express.urlencoded({extended:true}));
-//const denuncia = require("./public/models/Denuncia.js")
 app.use(express.json());
 
 app.set('view engine', 'ejs');

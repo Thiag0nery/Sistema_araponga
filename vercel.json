@@ -4,21 +4,34 @@
       {
         "src": "app.js",
         "use": "@vercel/node"
+      },
+      {
+        "src": "public/css/**", 
+        "use": "@vercel/static"
+      },
+      {
+        "src": "public/img/**", 
+        "use": "@vercel/static" 
+      },
+      {
+        "src": "public/js/**", 
+        "use": "@vercel/static" 
       }
+    
     ],
     "routes": [
       {
-        "handle": "filesystem",
+     
         "src": "/css/(.*)",
         "dest": "/public/css/"
       },
       {
-        "handle": "filesystem",
+       
         "src": "/img/(.*)",
         "dest": "/public/img/"
       },
       {
-        "handle": "filesystem",
+       
         "src": "/js/(.*)",
         "dest": "/public/js/"
       },
