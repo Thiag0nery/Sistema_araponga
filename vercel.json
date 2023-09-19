@@ -4,16 +4,10 @@
     {
       "src": "app.js",
       "use": "@vercel/node"
-    }
-  ],
-  "routes": [
-    {
-      "src": "/public/(css|js|img)/(.*)",
-      "dest": "public/$1/$2"
     },
     {
-      "src": "/(.*)",
-      "dest": "app.js"
+      "src": "public",
+      "use": "@vercel/static"
     }
   ]
 }
