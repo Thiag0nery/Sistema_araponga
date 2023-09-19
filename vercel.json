@@ -11,8 +11,16 @@
       }
     
     ],
-    "routes": [
-      { "handle": "@vercel/node" },
-      { "src": "/(.*)", "dest": "/public/$1" }
-    ]
+    
+      "routes": [
+        {
+          "src": "/(.*)",
+          "dest": "app.js"
+        },
+        {
+          "src": "/(.*)",
+          "dest": "public/$1"
+        }
+      ]
+    
   }
